@@ -1,0 +1,15 @@
+<div class="rate">
+  {{#link-to 'messages.new' class="button" id="ratebutton"}}
+    Rate Us {{/link-to}}
+</div>
+
+
+{{outlet}}
+<div class="messages">
+  <ul>
+    {{#each model as |message|}}
+      <li class=" jumbo">
+        {{message.name}}: {{message.body}}</li>
+    {{/each}}
+  </ul>
+</div>
